@@ -1,4 +1,4 @@
-import logo from '../logo.svg';
+import logo from '../logo512.png';
 import '../css/App.css';
 const App = () => {
   return (
