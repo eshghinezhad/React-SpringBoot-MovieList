@@ -1,0 +1,11 @@
+.topLogo {
+  height: 17vmin;
+}
+
+.header{
+    background-color:black;
+    margin: auton -16px;
+    color: 'white';
+    padding: 'px 32px';
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
+}
