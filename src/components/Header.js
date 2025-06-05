@@ -5,18 +5,14 @@ import './../css/Header.css';
 const Header = () => {
   return (
     <header className="header">
-     <nav className="mt-2">
-        {/* <ul className="flex space-x-4">
-          <li><a href="/" className="hover:underline">Home</a></li>
-          <li><a href="/about" className="hover:underline">About</a></li>
-          <li><a href="/contact" className="hover:underline">Contact</a></li>
-        </ul> */}
+     <nav className="" style={{  padding: '10px'}}>
+
             <p> 
                 <img src={topLogo} className="topLogo" alt="Logo" />
                 
-                <a href="#" style={{  marginLeft: '30%', color: 'white' }}>Home</a> | 
-                <a href="#" style={{  marginLeft: '10px', color: 'white' }}>About</a> | 
-                <a href="#" style={{  marginLeft: '10px', color: 'white' }}>Contact</a>
+                <a href="#" style={{  marginLeft: '60%', color: 'white',fontSize:'20px' }}>Home</a> | 
+                <a href="#" style={{  marginLeft: '10px', color: 'white',fontSize:'20px'  }}>About</a> | 
+                <a href="#" style={{  marginLeft: '10px', color: 'white',fontSize:'20px'  }}>Contact</a>
 
             </p>
       </nav>
@@ -25,9 +21,7 @@ const Header = () => {
     // <header className="App-header">
        
     //     <img src={topLogo} className="topLogo" alt="topLogo" />
-    //     <p>
-    //       This is a simple React application to showcase movie listings.
-    //     </p>
+ 
                    
     // </header>
     

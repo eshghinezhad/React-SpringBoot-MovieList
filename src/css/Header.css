@@ -3,9 +3,9 @@
 }
 
 .header{
-    background-color:black;
-    margin: auton -16px;
+    background-color:rgb(0, 0, 0);
+    margin: auton -1px;
     color: 'white';
-    padding: 'px 32px';
+    padding: '0';
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
 }
