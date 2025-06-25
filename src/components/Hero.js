@@ -7,18 +7,20 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const images = [
-  "https://seiuhealthcare.ca/wp-content/uploads/2022/10/vaccines-1.jpg",
-  "https://blogs.worldbank.org/content/dam/sites/blogs/img/detail/mgr/vaccination.png",
-  "https://assets.clevelandclinic.org/transform/9fdda55b-4a56-4b37-8815-e9f48e2491cd/multiple-Vaccines-1415852834-770x533-1_jpg"
+  "https://cms-assets.webediamovies.pro/cdn-cgi/image/dpr=1,fit=scale-down,gravity=auto,metadata=none,quality=85,width=2000/production/2/5d8392168efaee20812b995f2a8df212.jpg",
+  "https://cms-assets.webediamovies.pro/cdn-cgi/image/dpr=1,fit=scale-down,gravity=auto,metadata=none,quality=85,width=2000/production/2/a466221b558fdd7811cc34ca4408d3f0.jpg",
+  "https://cms-assets.webediamovies.pro/cdn-cgi/image/dpr=1,fit=scale-down,gravity=auto,metadata=none,quality=85,width=2000/production/2/335f3de47ff7f2d057af23bd83bb911f.jpg",
+  "https://cms-assets.webediamovies.pro/cdn-cgi/image/dpr=1,fit=scale-down,gravity=auto,metadata=none,quality=85,width=2000/production/2/c56db45c846f3381573c17e893e4aead.jpg",
+  "https://cms-assets.webediamovies.pro/cdn-cgi/image/dpr=1,fit=scale-down,gravity=auto,metadata=none,quality=85,width=2000/production/2/11d8c8c56c958f790ed2dfe6f0c9e6a2.jpg"
 ];
 
 const Hero = () => {
   return (
     <Box 
       sx={{
-        maxWidth: "800px",  
+        maxWidth: "900px",  
         margin: "auto",  
-        mt: 3,  
+        mt: 1,  
         borderRadius: "12px", 
         overflow: "hidden",
         boxShadow: 3
@@ -41,26 +43,10 @@ const Hero = () => {
               alt={`Slide ${index + 1}`}
               sx={{
                 width: "100%",
-                height: "300px",
+                height: "400px",
                 objectFit: "cover" 
               }}
             />
-            <Box
-              sx={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                color: "black",
-                padding: "10px 20px",
-                borderRadius: "8px",
-                textAlign: "center"
-              }}
-            >
-              <Typography variant="h7" fontWeight="bold">
-                Welcome to Vaccine Management Solutions
-              </Typography>
-            </Box>
           </SwiperSlide>
         ))}
       </Swiper>
