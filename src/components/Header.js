@@ -1,30 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Box from "@mui/material/Box";
+import Tooltip from "@mui/material/Tooltip";
 import topLogo from "./../topLogo.png";
 import './../css/App.css';
+import Navigation from "./Navigation";
  
 const Header = () => {
   return (
-    <header className="header">
-     <nav className="" style={{  padding: '10px'}}>
-
-            <p> 
-                <img src={topLogo} className="topLogo" alt="Logo" />
-                
-                <a href="#" style={{  marginLeft: '60%', color: 'white',fontSize:'20px' }}>Home</a> | 
-                <a href="#" style={{  marginLeft: '10px', color: 'white',fontSize:'20px'  }}>About</a> | 
-                <a href="#" style={{  marginLeft: '10px', color: 'white',fontSize:'20px'  }}>Contact</a>
-
-            </p>
-      </nav>
- 
-    </header>
-    // <header className="App-header">
-       
-    //     <img src={topLogo} className="topLogo" alt="topLogo" />
- 
-                   
-    // </header>
-    
+    <>
+      <header className="header">
+        <Box display="flex" alignItems="center">
+          <Tooltip title="Home" arrow>
+            <Link to="/" >
+              <img src={topLogo} className="topLogo" alt="Logo" />
+            </Link>
+          </Tooltip>
+        </Box>
+        <Navigation />
+      </header>
+    </>
   );
 }
 export default Header;

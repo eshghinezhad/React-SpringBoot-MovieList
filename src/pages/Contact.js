@@ -1,9 +1,20 @@
 import React from 'react'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function Contact() {
-  return (
-    <div>
-      
+ return (
+    <div style={{
+      display: 'grid',
+      gridTemplateRows: 'auto 1fr auto',
+      minHeight: '100vh'
+    }}>        
+    <Header />
+      <main style={{ padding: '2rem', textAlign: 'center' }}>
+        <h1>Contact Us</h1>
+        <p>This is my application.</p>
+      </main>
+      <Footer />
     </div>
   )
 }
