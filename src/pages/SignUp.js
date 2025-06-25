@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Register() {
+function SignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [program, setProgram] = useState("");
@@ -39,4 +39,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default SignUp;

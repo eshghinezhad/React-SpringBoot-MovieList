@@ -1,19 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import '../css/App.css';
+import './css/App.css';
 import Home from './pages/Home';
 import About from './pages/About';
-import Register from './pages/Register';
-import Login from '../pages/Login';
+import Contact from './pages/Contact';
+import SignUp from './pages/SignUp';
+import Login from './pages/Login';
 
-import Header from './components/Header';
-// import Search from './Search';
-// import Form from './Form';
-// import Counter from './Counter';
-// import Calculator from './Calculator';
-// import CalcButton from './CalcButton';
-// import Practice from   './Practice';
-import Footer from './components/Footer';
 
 
 
@@ -25,8 +18,9 @@ const App = () => {
         <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/Login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/signUp" element={<SignUp />} />
         </Routes>
       </Router>
 
