@@ -1,5 +1,28 @@
 {
-    "counter": [
-        {"id": 1, "value":0 }
+    "heroMovies":[
+        {
+            "id": 1,
+            "title":"mortal_kombat",
+            "poster":"https://cms-assets.webediamovies.pro/cdn-cgi/image/dpr=1,fit=scale-down,gravity=auto,metadata=none,quality=85,width=2000/production/2/5d8392168efaee20812b995f2a8df212.jpg"
+
+        },
+        {
+            "id": 2,
+            "title":"Avengers",
+            "poster":"https://cms-assets.webediamovies.pro/cdn-cgi/image/dpr=1,fit=scale-down,gravity=auto,metadata=none,quality=85,width=2000/production/2/335f3de47ff7f2d057af23bd83bb911f.jpg"
+
+        },
+        {
+            "id": 3,
+            "title":"Fantasticfour",
+            "poster":"https://cms-assets.webediamovies.pro/cdn-cgi/image/dpr=1,fit=scale-down,gravity=auto,metadata=none,quality=85,width=2000/production/2/c56db45c846f3381573c17e893e4aead.jpg"
+
+        },
+        {
+            "id": 4,
+            "title":"Dune",
+            "poster":"https://cms-assets.webediamovies.pro/cdn-cgi/image/dpr=1,fit=scale-down,gravity=auto,metadata=none,quality=85,width=2000/production/2/11d8c8c56c958f790ed2dfe6f0c9e6a2.jpg"
+
+        }
     ]
 }
