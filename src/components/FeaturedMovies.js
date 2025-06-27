@@ -20,7 +20,7 @@ const FeaturedMovies = () => {
     return (
       <div className="featured-section">
       <Typography variant="h4" align="center" sx = {{marginBottom: "30px"}}>Featured Movies</Typography>
-          <Grid container spacing={3} justifyContent="center">
+          <Grid container spacing={2} justifyContent="center">
                  {movies.map((movie) => (
                    <Grid item key={movie.id} xs={3}>
                      <Link to={`/movie/${movie.id}`} style={{ textDecoration: "none", color: "inherit" }}>

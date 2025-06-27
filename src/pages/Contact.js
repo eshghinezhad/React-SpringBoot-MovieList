@@ -12,7 +12,7 @@ function Contact() {
     <Header />
       <main style={{ padding: '2rem', textAlign: 'center' }}>
         <h1>Contact Us</h1>
-        <p>This is my application.</p>
+        <p>If you have any questions or feedback, feel free to reach out!</p>
       </main>
       <Footer />
     </div>

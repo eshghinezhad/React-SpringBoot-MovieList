@@ -33,123 +33,146 @@
      "movies_Tvs": [
         {
             "id": 1,
-            "title":"Elio",
-            "poster":"https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/200x0/v2/https://resizing.flixster.com/SptwUY0qE9WQGmhLyCVw0gGXvI0=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2JlMTc3ZGEwLTJiNDAtNDljYy1hMTA5LWVmZWU5MWQ5YmY2Ni5qcGc=",
+            "title": "Elio",
+            "poster": "https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/200x0/v2/https://resizing.flixster.com/SptwUY0qE9WQGmhLyCVw0gGXvI0=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2JlMTc3ZGEwLTJiNDAtNDljYy1hMTA5LWVmZWU5MWQ5YmY2Ni5qcGc=",
             "year": 2024,
             "genre": "Animation, Adventure, Comedy",
             "User Score": "78%",
-            "overview":"Elio is an upcoming animated film produced by Pixar Animation Studios and directed by Adrian Molina.",
-            "type": "movie"
+            "overview": "Elio is an upcoming animated film produced by Pixar Animation Studios and directed by Adrian Molina.",
+            "type": "movie",
+            "rent": "$3.99",
+            "purchase": "$14.99"
         },
         {
             "id": 2,
-            "title":"How to Train Your Dragon",
-            "poster":"https://all.web.img.acsta.net/r_500_x/img/8e/d4/8ed4b369e57b3326b6a79db082e50efd.jpg",
-            "overview":"How to Train Your Dragon is an animated film series based on the book series by Cressida Cowell, following the adventures of a young Viking named Hiccup and his dragon Toothless.",
-            "year": 2025,   
+            "title": "How to Train Your Dragon",
+            "poster": "https://all.web.img.acsta.net/r_500_x/img/8e/d4/8ed4b369e57b3326b6a79db082e50efd.jpg",
+            "overview": "How to Train Your Dragon is an animated film series based on the book series by Cressida Cowell, following the adventures of a young Viking named Hiccup and his dragon Toothless.",
+            "year": 2025,
             "genre": "Animation, Adventure, Family",
             "User Score": "80%",
-            "type": "movie"
+            "type": "movie",
+            "rent": "$2.99",
+            "purchase": "$12.99"
         },
         {
             "id": 3,
-            "title":"Lilo & Stitch",
-            "poster":"https://all.web.img.acsta.net/r_500_x/img/69/0a/690a5f596b404bdf31a05d0dc5d37d5d.jpg",
-            "overview":"Lilo & Stitch: The Series is an American animated television series produced by Walt Disney Television Animation. It is a spin-off of the 2002 film Lilo & Stitch and the first television series in the Lilo & Stitch franchise.",
+            "title": "Lilo & Stitch",
+            "poster": "https://all.web.img.acsta.net/r_500_x/img/69/0a/690a5f596b404bdf31a05d0dc5d37d5d.jpg",
+            "overview": "Lilo & Stitch: The Series is an American animated television series produced by Walt Disney Television Animation. It is a spin-off of the 2002 film Lilo & Stitch and the first television series in the Lilo & Stitch franchise.",
             "year": 2025,
             "genre": "Animation, Comedy, Kids",
             "User Score": "85%",
-            "type": "tv"
+            "type": "tv",
+            "rent": "$7.99",
+            "purchase": "$19.99"
         },
         {
             "id": 4,
-            "title":"Mission: Impossible",
-            "poster":"https://all.web.img.acsta.net/r_500_x/img/3e/ae/3eaec28322e7d333d53e8c0cc2440e8e.jpg",
-            "overview":"Mission: Impossible is an American television series that aired on CBS from 1966 to 1973, and returned for two seasons from 1988 to 1990. The series was created and initially produced by Bruce Geller.",
+            "title": "Mission: Impossible",
+            "poster": "https://all.web.img.acsta.net/r_500_x/img/3e/ae/3eaec28322e7d333d53e8c0cc2440e8e.jpg",
+            "overview": "Mission: Impossible is an American television series that aired on CBS from 1966 to 1973, and returned for two seasons from 1988 to 1990. The series was created and initially produced by Bruce Geller.",
             "year": 2025,
-            "genre": "Action, Spy, Thriller",    
+            "genre": "Action, Spy, Thriller",
             "User Score": "85%",
-            "type": "tv"
+            "type": "tv",
+            "rent": "$8.49",
+            "purchase": "$19.99"
         },
         {
             "id": 5,
-            "title":"F1 The Movie",
-            "poster":"https://all.web.img.acsta.net/r_500_x/img/49/78/49787f68c115177a429f394692f791c2.jpg",
-            "overview":"F1 The Movie is a documentary film that takes you behind the scenes of the world of Formula 1 racing, showcasing the speed, technology, and drama of the sport.",
-            "year": 2025,   
+            "title": "F1 The Movie",
+            "poster": "https://all.web.img.acsta.net/r_500_x/img/49/78/49787f68c115177a429f394692f791c2.jpg",
+            "overview": "F1 The Movie is a documentary film that takes you behind the scenes of the world of Formula 1 racing, showcasing the speed, technology, and drama of the sport.",
+            "year": 2025,
             "genre": "Action",
             "User Score": "80%",
-            "type": "movie"
+            "type": "movie",
+            "rent": "$3.49",
+            "purchase": "$13.99"
         },
         {
             "id": 6,
-            "title":"Garfield",
-            "poster":"https://media.themoviedb.org/t/p/w300_and_h450_bestv2/3HyTfZ9sSCoZPYrYHMffhRVm3Af.jpg",
+            "title": "Garfield",
+            "poster": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/3HyTfZ9sSCoZPYrYHMffhRVm3Af.jpg",
             "year": 1988,
             "genre": "Animation, Comedy, Kids",
             "User Score": "73%",
-            "overview":"The animated stories of Garfield the cat, Odie the dog, their owner Jon and the trouble they get into. And also Orson the Pig and his adventures on a farm with his fellow farm animals.",
-            "type": "tv"
+            "overview": "The animated stories of Garfield the cat, Odie the dog, their owner Jon and the trouble they get into. And also Orson the Pig and his adventures on a farm with his fellow farm animals.",
+            "type": "tv",
+            "rent": "$1.49",
+            "purchase": "$8.99"
         },
         {
             "id": 7,
-            "title":"Chespirito: Not Really on Purpose",
-            "poster":"https://media.themoviedb.org/t/p/w300_and_h450_bestv2/gNc8wna9IjIDUxtSeqLrjOjCpRe.jpg",
+            "title": "Chespirito: Not Really on Purpose",
+            "poster": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/gNc8wna9IjIDUxtSeqLrjOjCpRe.jpg",
             "year": 2025,
             "genre": "Drama, Comedy",
             "User Score": "81%",
-            "overview":"Miniseries that follow the life and career of Mexican actor, comedian and producer Roberto Gómez Bolaños, known for being the creator of El Chavo del 8, El Chapulín Colorado and Chespirito.",
-            "type": "tv"
+            "overview": "Miniseries that follow the life and career of Mexican actor, comedian and producer Roberto Gómez Bolaños, known for being the creator of El Chavo del 8, El Chapulín Colorado and Chespirito.",
+            "type": "tv",
+            "rent": "$2.29",
+            "purchase": "$11.99"
         },
         {
             "id": 8,
-            "title":"The Accountant²",
-            "poster":"https://media.themoviedb.org/t/p/w300_and_h450_bestv2/kMDUS7VmFhb2coRfVBoGLR8ADBt.jpg",
+            "title": "The Accountant²",
+            "poster": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/kMDUS7VmFhb2coRfVBoGLR8ADBt.jpg",
             "year": 2025,
             "genre": "Mystery, Crime, Thriller",
             "User Score": "72%",
-            "overview":"The Accountant² is a sequel to the 2016 film The Accountant, following the story of Christian Wolff, a math savant with a dangerous side, as he takes on new challenges in the world of high-stakes finance.",
-            "type": "movie"
+            "overview": "The Accountant² is a sequel to the 2016 film The Accountant, following the story of Christian Wolff, a math savant with a dangerous side, as he takes on new challenges in the world of high-stakes finance.",
+            "type": "movie",
+            "rent": "$9.99",
+            "purchase": "$25.99"
         },
         {
             "id": 9,
-            "title":"The Ugly Stepsister ",
-            "poster":"https://media.themoviedb.org/t/p/w300_and_h450_bestv2/crX9rSg9EohybhkEe8iTQUCe55y.jpg",
+            "title": "The Ugly Stepsister ",
+            "poster": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/crX9rSg9EohybhkEe8iTQUCe55y.jpg",
             "year": 2025,
             "genre": "Horror, Comedy, Fantasy, Drama",
             "User Score": "72%",
-            "overview":"The Ugly Stepsister is a darkly comedic take on the classic Cinderella story, focusing on the life of the often-overlooked stepsister who has her own story to tell.",
-            "type": "movie"
+            "overview": "The Ugly Stepsister is a darkly comedic take on the classic Cinderella story, focusing on the life of the often-overlooked stepsister who has her own story to tell.",
+            "type": "movie",
+            "rent": "$2.99",
+            "purchase": "$12.99"
         },
         {
             "id": 10,
-            "title":"Dirty Angels",
-            "poster":"https://media.themoviedb.org/t/p/w300_and_h450_bestv2/1y3TG8N8zwwMxqh0qzdyDs3IyCq.jpg",
+            "title": "Dirty Angels",
+            "poster": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/1y3TG8N8zwwMxqh0qzdyDs3IyCq.jpg",
             "year": 2024,
-            "genre": "Action, Drama, Thriller, War",    
+            "genre": "Action, Drama, Thriller, War",
             "User Score": "63%",
-            "overview":"Dirty Angels is an action-packed crime drama that follows a group of vigilantes who take the law into their own hands to fight against corruption and injustice in their city."
-            
-        },  
+            "overview": "Dirty Angels is an action-packed crime drama that follows a group of vigilantes who take the law into their own hands to fight against corruption and injustice in their city.",
+            "rent": "$2.49",
+            "purchase": "$10.99"
+        },
         {
             "id": 11,
-            "title":"Utopia",
-            "poster":"https://media.themoviedb.org/t/p/w300_and_h450_bestv2/yef0tY1Nw3BX8PJTfBLieqHj5Hw.jpg",
+            "title": "Utopia",
+            "poster": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/yef0tY1Nw3BX8PJTfBLieqHj5Hw.jpg",
             "year": 2024,
             "genre": "Mystery, Thriller, Action, Science Fiction",
             "User Score": "54%",
-            "overview":"Utopia is a gripping thriller that follows a group of conspiracy theorists who discover a mysterious graphic novel that predicts global disasters, leading them on a dangerous quest to uncover the truth.",
-            "type": "tv"
+            "overview": "Utopia is a gripping thriller that follows a group of conspiracy theorists who discover a mysterious graphic novel that predicts global disasters, leading them on a dangerous quest to uncover the truth.",
+            "type": "tv",
+            "rent": "$1.99",
+            "purchase": "$9.99"
         },
         {
             "id": 12,
-            "title":"Ballerina",
-            "poster":"https://media.themoviedb.org/t/p/w300_and_h450_bestv2/mKp4euM5Cv3m2U1Vmby3OGwcD5y.jpg",
+            "title": "Ballerina",
+            "poster": "https://media.themoviedb.org/t/p/w300_and_h450_bestv2/mKp4euM5Cv3m2U1Vmby3OGwcD5y.jpg",
             "year": 2025,
             "genre": "Action, Thriller, Crime",
             "User Score": "71%",
-            "overview":"The Last of Us is a post-apocalyptic drama series based on the critically acclaimed video game, following the journey of Joel and Ellie as they navigate a world ravaged by a fungal infection."
-        
+            "overview": "The Last of Us is a post-apocalyptic drama series based on the critically acclaimed video game, following the journey of Joel and Ellie as they navigate a world ravaged by a fungal infection.",
+            "type": "tv",
+            "rent": "$2.49",
+            "purchase": "$10.99"
         }
     ]
 

@@ -28,7 +28,7 @@ function MoviesList() {
             <div className="featured-section">
             <Grid container spacing={2} justifyContent="center">
             {movies.map((movie) => (
-                <Grid item xs={12} sm={6} md={4} lg={2} key={movie.id} >
+                <Grid item xs={12} sm={6} md={4} lg={3} xl={2} key={movie.id} >
                 <Link to={`/movie/${movie.id}`} style={{ textDecoration: "none", color: "inherit" }}>
                     <Card sx={{ maxWidth: 250, margin: "auto", transition: "0.3s", "&:hover": { transform: "scale(0.95)", boxShadow: "0 5px 15px rgba(0, 0, 0, 0.7)"  } }}>
                     <CardMedia component="img" height="350" image={movie.poster} alt={movie.title} />
