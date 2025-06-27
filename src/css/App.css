@@ -32,7 +32,11 @@
   z-index: 1000; 
 }
 
+.featured-section {
+  padding: 30px;
+  text-align: center;
 
+}
 
 
 .footer {

@@ -1,14 +1,55 @@
-import React from 'react'
+import React, {useEffect,useState} from "react";
+import { Grid,Card, CardMedia, CardContent, Typography } from "@mui/material";
+import { Link } from 'react-router-dom';
+import '../css/App.css';
 
-function FeaturedTV() {
-  return (
-    <div style={{
 
-    }}> 
-      <h2>Featured TV Shows</h2>
 
+
+const FeaturedTV = () => {
+    const [movies, setMovies] = useState([]);
+
+    useEffect(() => {
+      fetch("http://localhost:3001/movies_Tvs")
+        .then(res => res.json())
+        .then(data => {
+          const tvsOnly = data.filter(item => item.type === "tv");
+          setMovies(tvsOnly);
+        })
+        .catch(error => console.error("Error fetching movies:", error));
+    }, []);
+
+
+
+    return (
+      <div className="featured-section">
+      <Typography variant="h4" align="center" sx = {{marginBottom: "30px"}}>Featured TV Shows</Typography>
+          <Grid container spacing={3} justifyContent="center">
+                 {movies.map((movie) => (
+                   <Grid item key={movie.id} xs={3}>
+                     <Link to={`/movie/${movie.id}`} style={{ textDecoration: "none", color: "inherit" }}>
+                       <Card sx={{
+                                  maxWidth: 240,
+                                  margin: "auto",
+                                  transition: "0.3s",
+                                  "&:hover": { transform: "scale(1.05)", boxShadow: "0 5px 15px rgba(0,0,0,0.1)" }
+                                }}>
+                         <CardMedia
+                           component="img"
+                           height="350"
+                           image={movie.poster}
+                           alt={movie.title}
+                           sx={{ borderRadius: "16px" }}
+                         />
+                         <CardContent>
+                           <Typography variant="caption" align="center">{movie.title}</Typography>
+                         </CardContent>
+                       </Card>
+                     </Link>
+                   </Grid>
+                 ))}
+          </Grid>
     </div>
-  )
-}
-
+    );
+};
 export default FeaturedTV
