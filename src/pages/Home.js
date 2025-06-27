@@ -15,7 +15,7 @@ function Home() {
       <Header />
       <main style={{ padding: '2rem', textAlign: 'center' }}>
         <Hero />
-        {/* <FeaturedMovies /> */}
+        <FeaturedMovies />
         <FeaturedTV />
       </main>
       <Footer />

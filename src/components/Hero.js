@@ -12,9 +12,12 @@ const Hero = () => {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
-      fetch("http://localhost:3001/heroMovies")
+      fetch("http://localhost:3001/hero")
         .then(res => res.json())
-        .then(data => setMovies(data))
+        .then(data => {
+          console.log(data); 
+          setMovies(data);
+        })
         .catch(error => console.error("Error fetching movies:", error));
     }, []);
 
@@ -33,10 +36,10 @@ const Hero = () => {
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={10}
         slidesPerView={1}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
         navigation
         pagination={{ clickable: true }}
-        loop
+        // loop
       >
         {movies.map((movie) => (
           <SwiperSlide key={movie.id}>

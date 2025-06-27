@@ -1,5 +1,5 @@
 {
-    "heroMovies":[
+    "hero":[
         {
             "id": 1,
             "title":"Elio",
@@ -30,11 +30,11 @@
             "poster":"https://cms-assets.webediamovies.pro/cdn-cgi/image/dpr=1,fit=scale-down,gravity=auto,metadata=none,quality=85,width=2000/production/2/a466221b558fdd7811cc34ca4408d3f0.jpg"
         }
     ],
-    "movies_Tvs": [
+     "movies_Tvs": [
         {
             "id": 1,
             "title":"Elio",
-            "poster":"https://cms-assets.webediamovies.pro/cdn-cgi/image/dpr=1,fit=scale-down,gravity=auto,metadata=none,quality=85,width=2000/production/2/5d8392168efaee20812b995f2a8df212.jpg",
+            "poster":"https://resizing.flixster.com/IaXbRF4gIPh9jireK_4VCPNfdKc=/200x0/v2/https://resizing.flixster.com/SptwUY0qE9WQGmhLyCVw0gGXvI0=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2JlMTc3ZGEwLTJiNDAtNDljYy1hMTA5LWVmZWU5MWQ5YmY2Ni5qcGc=",
             "year": 2024,
             "genre": "Animation, Adventure, Comedy",
             "User Score": "78%",
@@ -152,4 +152,5 @@
             "type": "tv"
         }
     ]
+
 }

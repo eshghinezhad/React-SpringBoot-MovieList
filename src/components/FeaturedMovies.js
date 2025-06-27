@@ -1,15 +1,13 @@
 import React, {useEffect,useState} from "react";
-import { Box } from "@mui/material";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { useNavigate } from 'react-router-dom';
+import '../css/FeaturedSection.css';
+
 
 
 
 const FeaturedMovies = () => {
     const [movies, setMovies] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
       fetch("http://localhost:3001/movies_Tvs")
@@ -18,43 +16,30 @@ const FeaturedMovies = () => {
         .catch(error => console.error("Error fetching movies:", error));
     }, []);
 
-  return (
-    <Box 
-      sx={{
-        maxWidth: "900px",  
-        margin: "auto",  
-        mt: 1,  
-        borderRadius: "12px", 
-        overflow: "hidden",
-        boxShadow: 3
-      }}
-    >
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={10}
-        slidesPerView={1}
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
-        navigation
-        pagination={{ clickable: true }}
-        loop
-      >
-        {movies.map((movie) => (
-          <SwiperSlide key={movie.id}>
-            <Box
-              component="img"
-              src={movie.poster}
-              alt={movie.title}
-              sx={{
-                width: "100%",
-                height: "400px",
-                objectFit: "cover" 
-              }}
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </Box>
-  );
+    const handleMovieClick = (id) => {
+        navigate(`/movies/${id}`);
+    };
+
+    return (
+        <div className="featured-section">
+            <h2 className="featured-title"> Featured Movies</h2>
+            <div className="scroll-container">
+                <div className="featured-scroll" id="featured-movies-container">
+                    {movies.map(movie => (
+                        <div 
+                            key={movie.id} 
+                            className="featured-card"
+                            onClick={() => handleMovieClick(movie.id)}
+                        >
+                            <img src={movie.poster} alt={movie.title} />
+                            <h3>{movie.title}</h3>
+                        </div>
+                    ))}
+                </div>
+
+            </div>
+        </div>
+    );
 };
 
 export default FeaturedMovies
