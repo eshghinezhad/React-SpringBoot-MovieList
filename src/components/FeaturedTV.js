@@ -24,7 +24,7 @@ const FeaturedTV = () => {
     return (
       <div className="featured-section">
       <Typography variant="h4" align="center" sx = {{marginBottom: "30px"}}>Featured TV Shows</Typography>
-          <Grid container spacing={3} justifyContent="center">
+          <Grid container spacing={2} justifyContent="center">
                  {movies.map((movie) => (
                    <Grid item key={movie.id} xs={3}>
                      <Link to={`/movie/${movie.id}`} style={{ textDecoration: "none", color: "inherit" }}>
@@ -32,7 +32,7 @@ const FeaturedTV = () => {
                                   maxWidth: 240,
                                   margin: "auto",
                                   transition: "0.3s",
-                                  "&:hover": { transform: "scale(1.05)", boxShadow: "0 5px 15px rgba(0,0,0,0.1)" }
+                                  "&:hover": { transform: "scale(1.05)", boxShadow: "0 5px 15px rgba(0, 0, 0, 0.7)" }
                                 }}>
                          <CardMedia
                            component="img"

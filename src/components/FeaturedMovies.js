@@ -28,18 +28,18 @@ const FeaturedMovies = () => {
                                   maxWidth: 240,
                                   margin: "auto",
                                   transition: "0.3s",
-                                  "&:hover": { transform: "scale(1.05)", boxShadow: "0 5px 15px rgba(0,0,0,0.1)" }
+                                  "&:hover": { transform: "scale(1.05)", boxShadow: "0 5px 15px rgba(0, 0, 0, 1)" }
                                 }}>
-                         <CardMedia
-                           component="img"
-                           height="350"
-                           image={movie.poster}
-                           alt={movie.title}
-                           sx={{ borderRadius: "16px" }}
-                         />
-                         <CardContent>
-                           <Typography variant="caption" align="center">{movie.title}</Typography>
-                         </CardContent>
+                            <CardMedia
+                              component="img"
+                              height="350"
+                              image={movie.poster}
+                              alt={movie.title}
+                              sx={{ borderRadius: "16px"}}
+                            />
+                            <CardContent>
+                              <Typography variant="caption" align="center">{movie.title}</Typography>
+                            </CardContent>
                        </Card>
                      </Link>
                    </Grid>

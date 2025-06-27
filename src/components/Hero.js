@@ -1,4 +1,5 @@
 import React, {useEffect,useState} from "react";
+import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -43,6 +44,7 @@ const Hero = () => {
       >
         {movies.map((movie) => (
           <SwiperSlide key={movie.id}>
+            <Link to={`/movie/${movie.id}`}>
             <Box
               component="img"
               src={movie.poster}
@@ -53,6 +55,7 @@ const Hero = () => {
                 objectFit: "cover" 
               }}
             />
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
