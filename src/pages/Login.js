@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Box, TextField, Button, Typography } from '@mui/material';
@@ -8,10 +9,13 @@ import { Link } from 'react-router-dom';
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Welcome to the application!');
+    navigate("/");
   }
+
   return (
     <div style={{
       display: 'grid',
@@ -25,7 +29,6 @@ function Login() {
             flexDirection: 'column', 
             alignItems: 'center', 
             justifyContent: 'center', 
-            minHeight: '80vh', 
             backgroundColor: '#f5f5f5', 
             padding: '20px' 
         }}

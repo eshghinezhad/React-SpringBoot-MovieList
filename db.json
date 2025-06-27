@@ -128,8 +128,8 @@
             "year": 2024,
             "genre": "Action, Drama, Thriller, War",    
             "User Score": "63%",
-            "overview":"Dirty Angels is an action-packed crime drama that follows a group of vigilantes who take the law into their own hands to fight against corruption and injustice in their city.",
-            "type": "movie"
+            "overview":"Dirty Angels is an action-packed crime drama that follows a group of vigilantes who take the law into their own hands to fight against corruption and injustice in their city."
+            
         },  
         {
             "id": 11,
@@ -148,8 +148,8 @@
             "year": 2025,
             "genre": "Action, Thriller, Crime",
             "User Score": "71%",
-            "overview":"The Last of Us is a post-apocalyptic drama series based on the critically acclaimed video game, following the journey of Joel and Ellie as they navigate a world ravaged by a fungal infection.",
-            "type": "tv"
+            "overview":"The Last of Us is a post-apocalyptic drama series based on the critically acclaimed video game, following the journey of Joel and Ellie as they navigate a world ravaged by a fungal infection."
+        
         }
     ]
 

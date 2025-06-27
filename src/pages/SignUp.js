@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Box, TextField, Checkbox, FormControlLabel, Button, Typography } from '@mui/material';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function SignUp() {
     const [firstName, setFirstName] = useState('');
@@ -8,16 +10,19 @@ function SignUp() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [termsAccepted, setTermsAccepted] = useState(false);
-    const [message, setMessage] = useState('');
+    const navigate = useNavigate();
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    // Handle form submission logic here
-    
-  }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        navigate("/");
+    }
 
   return (
-    <div>
+     <div style={{
+      display: 'grid',
+      gridTemplateRows: 'auto 1fr auto',
+      minHeight: '100vh'
+    }}>      
       <Header />
       <Box 
         sx={{ 
@@ -25,7 +30,6 @@ function SignUp() {
             flexDirection: 'column', 
             alignItems: 'center', 
             justifyContent: 'center', 
-            minHeight: '100vh', 
             backgroundColor: '#f5f5f5', 
             padding: '20px' 
         }}
@@ -62,7 +66,6 @@ function SignUp() {
                 inputProps={{pattern:"\\w+@\\w+\\.com"}}
                 onChange={(e) => setEmail(e.target.value)} 
             />
-            {message}
             <TextField 
                 required
                 label="Password" 
@@ -94,7 +97,7 @@ function SignUp() {
             </Button>
         </form>
       </Box>
-      <footer />
+      <Footer />
     </div>
   );
 }

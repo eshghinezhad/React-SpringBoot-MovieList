@@ -7,6 +7,7 @@ function Navigation() {
   return (
     <div>
         <Box sx={{ display: "flex", alignItems: "center", gap: 2, flexWrap: "wrap", color: "#fff" }}>
+              <Link to="/moviesList" className="nav-link">Movies/TVShows</Link>
               <Link to="/signup" className="nav-link">Sign Up</Link>
               <Link to="/login" className="nav-link" >Login</Link>
         </Box>

@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import FeaturedMovies from '../components/FeaturedMovies';
 import FeaturedTV from '../components/FeaturedTV';
-import Contact from './Contact';
+import Content from '../components/Content';
 
 function Home() {
   return (
@@ -18,7 +18,7 @@ function Home() {
         <Hero />
         <FeaturedMovies />
         <FeaturedTV />
-        <Contact />
+        <Content />
       </main>
       <Footer />
     </div>
