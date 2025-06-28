@@ -32,7 +32,7 @@ function MovieDetails() {
             position: "relative",
             width: "100%",
             minHeight: "80vh",
-            backgroundImage: `url(${movie.poster})`, 
+            backgroundImage: `url(${movie.lposter})`, 
             backgroundSize: "cover", 
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat", 
@@ -113,14 +113,14 @@ function MovieDetails() {
                 color="primary"
                 sx={{ fontSize: { xs: "0.8rem", md: "1rem" }, px: { xs: 2, md: 3 }, py: { xs: 1, md: 1.5 } }}
               >
-                Rent Now: {movie.rent}
+                Rent: {movie.rent}
               </Button>
               <Button 
                 variant="contained" 
                 color="secondary"
                 sx={{ fontSize: { xs: "0.8rem", md: "1rem" }, px: { xs: 2, md: 3 }, py: { xs: 1, md: 1.5 } }}
               >
-                Buy Now: {movie.purchase}
+                Buy: {movie.purchase}
               </Button>
             </Box>
           </Box>
