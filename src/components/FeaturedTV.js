@@ -42,7 +42,7 @@ const FeaturedTV = () => {
                            sx={{ borderRadius: "16px" }}
                          />
                          <CardContent>
-                           <Typography variant="caption" align="center">{movie.title}</Typography>
+                           <Typography variant="body1" align="center">{movie.title}</Typography>
                          </CardContent>
                        </Card>
                      </Link>
