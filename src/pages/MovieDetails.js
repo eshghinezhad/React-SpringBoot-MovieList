@@ -21,119 +21,93 @@ function MovieDetails() {
 
   return (
     <div style={{
-      display: 'grid',
-      gridTemplateRows: 'auto 1fr auto',
+      display: 'flex',
+      flexDirection: 'column',
       minHeight: '100vh'
     }}>        
     <Header />
-      <main style={{ padding: '0rem', textAlign: 'center' }}>
+      <main style={{ flex: 1, padding: 0, display: 'flex', minHeight:0 }}>
+        {/* Left column: Details */}
         <Box
           sx={{
-            position: "relative",
-            width: "100%",
-            minHeight: "80vh",
-            backgroundImage: `url(${movie.lposter})`, 
-            backgroundSize: "cover", 
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat", 
-            filter: "brightness(60%)",
+            flex: { xs: "1 1 100%", md: "1 1 20%" },
+            display: "flex",
+            backgroundColor: "rgb(7, 7, 7)",
+            color: "white",
+            p: { xs: 1, sm: 3, md: 4},
           }}
         >
           <Box
             sx={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              textAlign: "center",
-              width: { xs: "90%", md: "70%" }, // Make width responsive
-              backgroundColor: "rgba(0, 0, 0, 0.7)", 
-              padding: { xs: "15px", sm: "20px", md: "30px" },
-              borderRadius: "10px",
-              color: "white",
+              width: "80%",
+              maxWidth: 300,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center"
             }}
           >
-            <Typography 
-              variant="h3" 
-              fontWeight="bold" 
-              sx={{ fontSize: { xs: "1.8rem", sm: "2rem", md: "2.5rem" } }}
-            >
+            <Typography variant="h5" fontWeight="bold" sx={{ fontSize: { xs: "1.1rem", sm: "1.3rem", md: "1.5rem" } }}>
               {movie.title}
             </Typography>
-            <Typography 
-              variant="h6" 
-              sx={{ opacity: 0.9, fontSize: { xs: "0.9rem", md: "1.1rem" } }}
-            >
+            <Typography variant="h6" sx={{ fontSize: { xs: "0.7rem", md: "0.8rem" } }}>
               {movie.genre}
             </Typography>
-
-            {/* Small Poster & Description */}
-            <Box 
-              sx={{ 
-                display: "flex", 
-                alignItems: "center", 
-                justifyContent: "center", 
-                gap: 3, 
-                flexWrap: "wrap", // Makes content stack on mobile
-                marginTop: 3 
-              }}
-            >
-              <Card sx={{ maxWidth: 180, backgroundColor: "transparent", boxShadow: "none" }}>
-                <CardMedia 
-                  component="img" 
-                  image={movie.poster} 
+            <Box sx={{ display: "flex",    flexDirection: "column", alignItems: "center", m: 2 }}>
+              <Card sx={{ maxWidth: 200 }}>
+                <CardMedia
+                  component="img"
+                  image={movie.poster}
                   alt={movie.title}
                   sx={{ width: "100%", borderRadius: "5px" }}
                 />
               </Card>
-              <Typography 
-                variant="body1" 
-                sx={{ 
-                  fontSize: { xs: "0.9rem", md: "1rem" }, 
-                  textAlign: "left", 
-                  maxWidth: "400px" 
+              <Typography
+                variant="body1"
+                sx={{
+                  fontSize: { xs: "0.7rem", md: "0.9rem" },
+                  textAlign: "center",
+                  maxWidth: "300px",
+                  pt: 1,
                 }}
               >
                 {movie.overview}
               </Typography>
             </Box>
-
-            {/* Rent & Buy Buttons */}
-            <Box 
-              sx={{ 
-                marginTop: 3, 
-                display: "flex", 
-                gap: 2, 
-                flexWrap: "wrap", 
-                justifyContent: "center" 
-              }}
-            >
-              <Button 
-                variant="contained" 
-                color="primary"
-                sx={{ fontSize: { xs: "0.8rem", md: "1rem" }, px: { xs: 2, md: 3 }, py: { xs: 1, md: 1.5 } }}
-              >
+            <Box sx={{ mt: 3, display: "flex", gap: 2, flexWrap: "wrap" }}>
+              <Button variant="contained" color="primary">
                 Rent: {movie.rent}
               </Button>
-              <Button 
-                variant="contained" 
-                color="secondary"
-                sx={{ fontSize: { xs: "0.8rem", md: "1rem" }, px: { xs: 2, md: 3 }, py: { xs: 1, md: 1.5 } }}
-              >
+              <Button variant="contained" color="primary">
                 Buy: {movie.purchase}
               </Button>
             </Box>
           </Box>
         </Box>
+        {/* Right column: lposter as image */}
+        <Box
+          sx={{
+            flex: { xs: "0 0 0%", md: "1 1 80%" },
+            display: { xs: "none", md: "flex" },
+            alignItems: "left",
+            justifyContent: "left",
+            backgroundColor: "#111", // optional, for contrast
+            // height: "100%",
+          }}
+        >
+          <img
+            src={movie.lposter}
+            alt={movie.title}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover", // ensures the image covers the box without distortion
+            }}
+          />
+        </Box>
       </main>
       <Footer />
     </div>
-
-        
-
-
-
-
   );
 };
 

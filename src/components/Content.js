@@ -35,7 +35,7 @@ const Content = () => {
         }}
       />
       <Typography variant="h4" align="center" sx={{ marginBottom: "30px" }}>
-          Attend Movie.Ca Events & Plan Your Own!
+          Attend Movie.ca Events & Plan Your Own!
       </Typography>
       <Grid container spacing={2} justifyContent="center">
         {contentData.map((item, index) => (
@@ -44,7 +44,7 @@ const Content = () => {
               <Box sx={{ position: "relative"}}>
                 <CardMedia
                   component="img"
-                  height="400"
+                  height="450"
                   image={item.image}
                   alt={item.title}
                 />

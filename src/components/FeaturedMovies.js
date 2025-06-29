@@ -10,8 +10,8 @@ const FeaturedMovies = () => {
     useEffect(() => {
       fetch("http://localhost:3001/movies_Tvs")
         .then(res => res.json())
-        .then(data => {
-          const moviesOnly = data.filter(item => item.type === "movie");
+        .then(data => {  
+          const moviesOnly = data.filter(item => item.featured && item.featured.includes("movie"));
           setMovies(moviesOnly);
         })
         .catch(error => console.error("Error fetching movies:", error));

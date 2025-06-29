@@ -13,7 +13,7 @@ const FeaturedTV = () => {
       fetch("http://localhost:3001/movies_Tvs")
         .then(res => res.json())
         .then(data => {
-          const tvsOnly = data.filter(item => item.type === "tv");
+          const tvsOnly = data.filter(item => item.featured && item.featured.includes("tv"));
           setMovies(tvsOnly);
         })
         .catch(error => console.error("Error fetching movies:", error));

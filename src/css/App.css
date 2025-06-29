@@ -15,8 +15,10 @@
   font-size: 18px;
 }
 .nav-link:hover {
-  color: #eff5c9;
   transform: scale(1.08);
+  font-weight: bold;
+  text-decoration: underline;
+
 }
 .header {
   display: flex;
