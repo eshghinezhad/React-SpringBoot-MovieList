@@ -13,7 +13,8 @@ const Hero = () => {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
-      fetch("http://localhost:3001/movies_Tvs")
+     // (`${process.env.REACT_SERVER_URL}/
+      fetch(`${process.env.REACT_SERVER_URL}/movies_Tvs`)
         .then(res => res.json())
         .then(data => {
           const hero = data.filter(item => item.featured && item.featured.includes("hero"));
