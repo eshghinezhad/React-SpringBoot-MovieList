@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
-import './../css/App.css';
+import '../css/App.css';
 
 function Navigation() {
   return (
