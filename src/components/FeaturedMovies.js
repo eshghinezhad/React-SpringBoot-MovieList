@@ -8,7 +8,7 @@ const FeaturedMovies = () => {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
-      fetch(`${process.env.REACT_SERVER_URL}/movies_Tvs`)
+      fetch(`${process.env.REACT_APP_SERVER_URL}/movies_Tvs`)
         .then(res => res.json())
         .then(data => {  
           const moviesOnly = data.filter(item => item.featured && item.featured.includes("movie"));

@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 
 function MovieDetails() {
     const { id } = useParams();
-    const [movie, setMovie] = useState(null);
+    const [movie, setMovie] = useState();
 
     useEffect(() => {
       fetch(`http://localhost:3001/movies_Tvs/${id}`)
@@ -30,16 +30,18 @@ function MovieDetails() {
         {/* Left column: Details */}
         <Box
           sx={{
-            flex: { xs: "1 1 100%", md: "1 1 20%" },
+            flex: { xs: "1 1 100%", md: "1 1 35%" },
             display: "flex",
-            backgroundColor: "rgb(7, 7, 7)",
+            background: "linear-gradient(90deg, #000000 0%,rgb(13, 28, 47) 100%)",
             color: "white",
-            p: { xs: 1, sm: 3, md: 4},
+            alignItems: "center",
+            justifyContent: "center",
+            // p: { xs: 0.5, sm: 1, md: 2},
           }}
         >
           <Box
             sx={{
-              width: "80%",
+              width: "90%",
               maxWidth: 300,
               display: "flex",
               flexDirection: "column",
@@ -74,7 +76,7 @@ function MovieDetails() {
                 {movie.overview}
               </Typography>
             </Box>
-            <Box sx={{ mt: 3, display: "flex", gap: 2, flexWrap: "wrap" }}>
+            <Box sx={{ mt: 3, display: "flex", gap: 2, flexWrap: "wrap", alignItems: "center",justifyContent: "center" }}>
               <Button variant="contained" color="primary">
                 Rent: {movie.rent}
               </Button>
@@ -91,8 +93,6 @@ function MovieDetails() {
             display: { xs: "none", md: "flex" },
             alignItems: "left",
             justifyContent: "left",
-            backgroundColor: "#111", // optional, for contrast
-            // height: "100%",
           }}
         >
           <img
@@ -101,7 +101,7 @@ function MovieDetails() {
             style={{
               width: "100%",
               height: "100%",
-              objectFit: "cover", // ensures the image covers the box without distortion
+              objectFit: "cover", 
             }}
           />
         </Box>
