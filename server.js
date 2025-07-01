@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001;
 const apiRouter = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 
-app.use("/api", middlewares, apiRouter);
+app.use( middlewares, apiRouter);
 
 // Serve React build
 app.use(express.static(path.join(__dirname, "client", "build")));
