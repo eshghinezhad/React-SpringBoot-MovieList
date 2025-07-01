@@ -20,7 +20,7 @@
     "url": "https://github.com/eshghinezhad/React-SpringBoot-MovieList/issues"
   },
   "homepage": "https://github.com/eshghinezhad/React-SpringBoot-MovieList#readme",
-  "description": "",
+  "description": "This is a React app with a mock backend using `json-server`.",
   "dependencies": {
     "express": "^5.1.0",
     "json-server": "^1.0.0-beta.3"
