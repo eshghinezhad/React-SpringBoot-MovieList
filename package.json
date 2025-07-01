@@ -6,7 +6,8 @@
     "start": "node server.js",
     "server": "json-server --watch db.json --port 3001",
     "client": "npm start --prefix client",
-    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,10 @@
   "homepage": "https://github.com/eshghinezhad/React-SpringBoot-MovieList#readme",
   "description": "",
   "dependencies": {
-    "concurrently": "^9.2.0",
     "express": "^5.1.0",
     "json-server": "^1.0.0-beta.3"
-    
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
   }
 }

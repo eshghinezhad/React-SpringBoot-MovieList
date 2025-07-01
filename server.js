@@ -6,6 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // JSON Server setup
+
 const apiRouter = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 
