@@ -36,13 +36,14 @@ function MovieDetails() {
             color: "white",
             alignItems: "center",
             justifyContent: "center",
+            
             // p: { xs: 0.5, sm: 1, md: 2},
           }}
         >
           <Box
             sx={{
-              width: "90%",
-              maxWidth: 300,
+              width: "100%",
+              maxWidth: "100%",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -55,8 +56,8 @@ function MovieDetails() {
             <Typography variant="h6" sx={{ fontSize: { xs: "0.7rem", md: "0.8rem" } }}>
               {movie.genre}
             </Typography>
-            <Box sx={{ display: "flex",    flexDirection: "column", alignItems: "center", m: 2 }}>
-              <Card sx={{ maxWidth: 200 }}>
+            <Box sx={{ display: "flex",flexDirection: "column", alignItems: "center", m: 2 }}>
+              <Card sx={{ maxWidth: "60%" }}>
                 <CardMedia
                   component="img"
                   image={movie.poster}
@@ -69,7 +70,7 @@ function MovieDetails() {
                 sx={{
                   fontSize: { xs: "0.7rem", md: "0.9rem" },
                   textAlign: "center",
-                  maxWidth: "300px",
+                  maxWidth: "80%",
                   pt: 1,
                 }}
               >
