@@ -27,7 +27,7 @@ This is a React app with a mock backend using `json-server`.
 In the project root (`app` folder), run:
 
 ```bash
-npm run server
+npm start
 ```
 
 This will start `json-server` at [http://localhost:3001](http://localhost:3001) using `db.json` as the database.
@@ -37,6 +37,7 @@ This will start `json-server` at [http://localhost:3001](http://localhost:3001) 
 Open a new terminal in the same folder and run:
 
 ```bash
+cd client
 npm start
 ```
 
@@ -46,11 +47,6 @@ This will start the React app at [http://localhost:3000](http://localhost:3000).
 
 - The frontend will fetch data from the backend (`json-server`).
 - Make sure both servers are running for full functionality.
-
-## Deployment
-
-You can deploy the frontend to Vercel or any static hosting.  
-The backend (`json-server`) is for development and testing only.
 
 ---
 
