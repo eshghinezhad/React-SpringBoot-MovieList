@@ -1,31 +1,26 @@
 {
   "name": "app",
   "version": "1.0.0",
+  "description": "This is a React app with a mock backend using `json-server`.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "server": "json-server --watch db.json --port 3001",
-    "client": "npm start --prefix client",
-    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eshghinezhad/React-SpringBoot-MovieList.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/eshghinezhad/React-SpringBoot-MovieList/issues"
   },
-  "homepage": "https://github.com/eshghinezhad/React-SpringBoot-MovieList#readme",
-  "description": "This is a React app with a mock backend using `json-server`.",
-  "dependencies": {
-    "express": "^5.1.0",
-    "json-server": "^1.0.0-beta.3"
+  "engines": {
+  "node": "18.x"
   },
-  "devDependencies": {
-    "concurrently": "^9.2.0"
+  "homepage": "https://github.com/eshghinezhad/React-SpringBoot-MovieList#readme",
+  "dependencies": {
+    "json-server": "^0.17.4"
   }
 }

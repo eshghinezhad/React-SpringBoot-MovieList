@@ -1,27 +1,30 @@
-const express = require("express");
-// const path = require("path");
 const jsonServer = require("json-server");
+const server = jsonServer.create();
+const router = jsonServer.router("db.json");
+const middlewares = jsonServer.defaults();
+server.use(middlewares);
 
-const app = express();
+server.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
+
+server.use(router);
+
 const PORT = process.env.PORT || 3001;
+server.listen(PORT, () => {
+  console.log(`JSON Server is running on port ${PORT}`);
+});
 
-// // JSON Server setup
-// const apiRouter = jsonServer.router("db.json");
-// const middlewares = jsonServer.defaults();
 
-// app.use( middlewares, apiRouter);
-
-// // Serve React build
+// Serve React build
 // app.use(express.static(path.join(__dirname, "client", "build")));
 
 // app.get("*", (req, res) => {
 //   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 // });
 
-app.get ('/', (req, res) => {
-  res.send('Welcome to the Movie Project API');
-});
+// app.get ('/', (req, res) => {
+//   res.send('Welcome to the Movie Project API');
+// });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
