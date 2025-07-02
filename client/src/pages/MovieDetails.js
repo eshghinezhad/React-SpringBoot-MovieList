@@ -30,7 +30,7 @@ function MovieDetails() {
         {/* Left column: Details */}
         <Box
           sx={{
-            flex: { xs: "1 1 100%", md: "1 1 35%" },
+            flex: { xs: "1 1 100%", md: "1 1 30%" },
             display: "flex",
             background: "linear-gradient(90deg, #000000 0%,rgb(13, 28, 47) 100%)",
             color: "white",

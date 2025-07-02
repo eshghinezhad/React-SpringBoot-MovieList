@@ -40,7 +40,7 @@ const Hero = () => {
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         navigation
         pagination={{ clickable: true }}
-        loop
+        // loop
       >
         {movies.map((movie) => (
           <SwiperSlide key={movie.id}>
