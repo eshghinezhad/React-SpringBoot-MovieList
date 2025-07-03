@@ -7,9 +7,10 @@ import {Link} from "react-router-dom";
 function MoviesList() {
 
     const [movies, setMovies] = useState([]);
+    const REACT_APP_SERVER_URL="https://movielisting-a1-8e786942c8a1.herokuapp.com";
 
     useEffect(() => {
-        fetch("http://localhost:3001/movies_Tvs")
+      fetch(`${REACT_APP_SERVER_URL}/movies_Tvs`)
         .then(res => res.json())
         .then(data => setMovies(data))
         .catch(error => console.error("Error fetching movies:", error));

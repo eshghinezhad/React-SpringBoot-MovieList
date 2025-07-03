@@ -7,9 +7,10 @@ import Footer from '../components/Footer';
 function MovieDetails() {
     const { id } = useParams();
     const [movie, setMovie] = useState();
+    const REACT_APP_SERVER_URL="https://movielisting-a1-8e786942c8a1.herokuapp.com";
 
     useEffect(() => {
-      fetch(`http://localhost:3001/movies_Tvs/${id}`)
+      fetch(`${REACT_APP_SERVER_URL}/movies_Tvs/${id}`)
         .then(res => res.json())
         .then(data => setMovie(data))
         .catch(error => console.error("Error fetching movie:", error));

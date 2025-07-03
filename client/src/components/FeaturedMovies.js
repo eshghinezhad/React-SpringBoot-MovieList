@@ -6,9 +6,9 @@ import '../css/App.css';
 
 const FeaturedMovies = () => {
     const [movies, setMovies] = useState([]);
-
+    const REACT_APP_SERVER_URL="https://movielisting-a1-8e786942c8a1.herokuapp.com";
     useEffect(() => {
-      fetch(`${process.env.REACT_APP_SERVER_URL}/movies_Tvs`)
+      fetch(`${REACT_APP_SERVER_URL}/movies_Tvs`)
         .then(res => res.json())
         .then(data => {  
           const moviesOnly = data.filter(item => item.featured && item.featured.includes("movie"));
