@@ -17,7 +17,7 @@ This is a React app with a mock backend using `json-server`.
 
 2. **Install dependencies:**
    ```bash
-   npm install
+  
    cd client
    npm install
 
