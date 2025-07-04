@@ -1,30 +1,29 @@
+const express = require("express");
+const path = require("path");
 const jsonServer = require("json-server");
-const server = jsonServer.create();
+
+const app = express();
+const api = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
-server.use(middlewares);
-
-server.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  next();
-});
-
-server.use(router);
 
 const PORT = process.env.PORT || 3001;
-server.listen(PORT, () => {
-  console.log(`JSON Server is running on port ${PORT}`);
+
+// Middleware for json-server
+api.use(middlewares);
+api.use("/api", router); // all APIs will be under /api/*
+
+// Serve React static files
+app.use(express.static(path.join(__dirname, "client", "build")));
+
+// Mount json-server at /api
+app.use("/api", api);
+
+// React SPA fallback
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
-
-// Serve React build
-// app.use(express.static(path.join(__dirname, "client", "build")));
-
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-// });
-
-// app.get ('/', (req, res) => {
-//   res.send('Welcome to the Movie Project API');
-// });
-
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});

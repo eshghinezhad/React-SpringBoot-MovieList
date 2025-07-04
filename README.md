@@ -18,26 +18,32 @@ This is a React app with a mock backend using `json-server`.
 2. **Install dependencies:**
    ```bash
    npm install
+   cd client
+   npm install
+
    ```
 
-## Running the App
+## Running the App locally
 
 ### 1. Start the Backend (json-server)
 
-In the project root (`app` folder), run:
+cd clinet
+
+In the project `client` folder, run:
 
 ```bash
-npm start
+npm run server
 ```
 
 This will start `json-server` at [http://localhost:3001](http://localhost:3001) using `db.json` as the database.
 
+
 ### 2. Start the Frontend (React)
 
-Open a new terminal in the same folder and run:
+Open a new terminal in the same folder 
+In the project `client` folder, run: 
 
 ```bash
-cd client
 npm start
 ```
 
